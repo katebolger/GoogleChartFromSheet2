@@ -4,6 +4,7 @@
 	<script type="text/javascript" src="https://www.google.com/jsapi"></script> <!--  This is required!  It adds "loaders" for all of the Google APIs (Application Programming Interface) that will (may) be used in this program -->
 	<script type="text/javascript">  // This code *could* be put in another file...and likely I would ask you to do that, but it will make it too cumbersome for this tutorial!
 		google.load("visualization", '1', {packages:['corechart']});  // This loads the Google "Visualization" API, which is needed to use Google Charts or Google Tables.  It's required code!  The arguments are API, Version, Packages (this one is not required)
+		google.load("gdata", "1");
 		google.setOnLoadCallback(readData);  // The google.setOnLoadCallback method will call the specified callback function once your document (including any specified Google APIs) have finished loading.
 
 		function readData() {
