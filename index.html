@@ -37,7 +37,7 @@
 		  console.log(csvData);
 
 		  //Just for fun, this data will also be put into a Google Chart (it doesn't have a lot of meaning, but..imagine what you could do with this!)
-		  var chart = new google.visualization.PieChart(document.getElementById('columnchart'));
+		  var chart = new google.visualization.ColumnChart(document.getElementById('columnchart'));
 		  chart.draw(data, { legend: { position: 'none' } });
 			} //This brace ends the function handleQueryResponse
 	</script>
