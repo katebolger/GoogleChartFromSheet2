@@ -32,6 +32,9 @@
 		  
 
 		  for (var i = 0; i<data.getNumberOfRows(); i++){data.setCell(0,i,i);}
+		  
+		  csvData = google.visualization.dataTableToCsv(data);
+		  console.log(csvData);
 
 		  //Just for fun, this data will also be put into a Google Chart (it doesn't have a lot of meaning, but..imagine what you could do with this!)
 		  var chart = new google.visualization.PieChart(document.getElementById('columnchart'));
