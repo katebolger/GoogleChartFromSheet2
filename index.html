@@ -31,7 +31,7 @@
 		  console.log(data.getNumberOfRows());
 		  
 
-		  for (var i = 0; i<data.getNumberOfRows(); i++){data.setCell(i,0,i);}
+		  for (var i = 0; i<data.getNumberOfRows(); i++){console.log(i);data.setCell(i,0,i);}
 		  
 		  csvData = google.visualization.dataTableToCsv(data);
 		  console.log(csvData);
