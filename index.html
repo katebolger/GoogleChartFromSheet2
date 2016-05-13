@@ -28,6 +28,7 @@
 		  //If you prefer (now that we've done so much with parsing CSV data), you can get the data in CSV form
 		  var csvData = google.visualization.dataTableToCsv(data);
 		  console.log(csvData);
+		  console.log(data.getNumberOfRows());
 		  
 
 		  for (var i = 0; i<data.getNumberOfRows(); i++){data.setCell(0,i,i);}
